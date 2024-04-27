@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        color: brown;
+        background-color: beige;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+
+    <script>
+      function show() {
+        var ten = document.getElementById("ten1").value;
+        var mk = document.getElementById("mk1").value;
+        if (mk == "123456") {
+          alert("đăng nhập thành công");
+          document.getElementById("result").innerHTML = ten;
+        } else document.getElementById("result").innerHTML = "mk ko chính xác";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Đăng nhập</h1>
+    <table border="1" cellspacing="0" align="center">
+      <form onsubmit="event.preventDefault(); show();">
+        <tr>
+          <th>Mã người dùng</th>
+          <th><input type="text" id="ten1" /></th>
+        </tr>
+        <tr>
+          <th>Mật khẩu</th>
+          <th><input type="text" id="mk1" /></th>
+        </tr>
+        <tr>
+          <th colspan="2">
+            <button type="button" onclick="show()">Đồng ý</button>
+          </th>
+        </tr>
+        <tr>
+          <th colspan="2" id="result"></th>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: chartreuse;
+        text-align: center;
+      }
+      .a {
+        color: chartreuse;
+      }
+      .m {
+      }
+    </style>
+    <script>
+      function show() {
+        alert("Thành công");
+        document.getElementById("v").innerHTML = "Thành công";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+    <div>
+      <table border="1" cellspacing="0" align="center" class="a">
+        <tr>
+          <td>Họ và tên</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Địa chỉ</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>SDT</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Phái</td>
+          <td>
+            <input type="radio" id="nam" name="gender" value="nam" />
+            <label for="nam">Nam</label>
+            <input type="radio" id="nu" name="gender" value="nu" />
+            <label for="nu">Nữ</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Nghề nghiệp</td>
+          <td>
+            <select name="nghenghiep" id="nghe">
+              <option value="">Giáo viên</option>
+              <option value="">Học sinh</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Sản phẩm tham gia</td>
+          <td>
+            <select name="a" id="a" size="5" multiple>
+              <option value="">bai1</option>
+              <option value="">bai2</option>
+              <option value="">bai3</option>
+              <option value="">bai4</option>
+              <option value="">bai5</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Số người dự đoán tham gia</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <th colspan="2">
+            <button type="button" onclick="show()">Đăng ký</button>
+          </th>
+        </tr>
+        <tr>
+          <td colspan="2" id="v"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
